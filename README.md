@@ -12,3 +12,6 @@ or http://jbake.org/docs/2.5.1/#installation
 bake and start the server:
 
 ```jbake -b -s```
+
+### How-To Guide
+https://melix.github.io/blog/2014/02/hosting-jbake-github.html
