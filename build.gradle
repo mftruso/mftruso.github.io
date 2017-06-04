@@ -26,6 +26,12 @@ githubPages {
     }
 }
 
+task copyCname(type: Copy) {
+    from 'CNAME'
+    into 'output'
+}
+
 task publish(type: GradleBuild) {
-    tasks = ['publishGhPages']
+    //TODO bake before publishing
+    tasks = ['copyCname','publishGhPages']
 }
