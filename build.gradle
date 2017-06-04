@@ -16,6 +16,8 @@ apply plugin: 'org.ajoberstar.github-pages'
 
 githubPages {
     repoUri = 'git@github.com:mftruso/mftruso.github.io.git'
+    // personal pages only publish from master branch
+    // https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/
     targetBranch = 'master'
     pages {
         from(file('output')) {
