@@ -7,23 +7,29 @@ buildscript {
     }
     dependencies {
         classpath "me.champeau.gradle:jbake-gradle-plugin:0.2"
-        classpath "org.ajoberstar:gradle-git:1.7.1"
+        classpath 'org.ajoberstar:gradle-git-publish:0.2.1'
     }
 }
 
 apply plugin: "me.champeau.jbake"
-apply plugin: 'org.ajoberstar.github-pages'
+apply plugin: 'org.ajoberstar.git-publish'
 
-githubPages {
+gitPublish {
     repoUri = 'git@github.com:mftruso/mftruso.github.io.git'
     // personal pages only publish from master branch
     // https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/
-    targetBranch = 'master'
-    pages {
-        from(file('output')) {
+    branch = 'master'
+    contents {
+        from ('output'){
             into '.'
         }
     }
+}
+
+jbake {
+    input = file 'src/jbake'
+    output = file 'output'
+    clearCache = true
 }
 
 task copyCname(type: Copy) {
@@ -32,6 +38,5 @@ task copyCname(type: Copy) {
 }
 
 task publish(type: GradleBuild) {
-    //TODO bake before publishing
-    tasks = ['copyCname','publishGhPages']
+    tasks = ['jbake','copyCname','gitPublishPush']
 }
