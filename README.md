@@ -15,3 +15,9 @@ bake and start the server:
 
 ### How-To Guide
 https://melix.github.io/blog/2014/02/hosting-jbake-github.html
+
+## Publish
+using the `gradle-git-publish` plugin:
+https://github.com/ajoberstar/gradle-git-publish
+
+```./gradlew publish```
