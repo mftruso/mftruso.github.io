@@ -6,8 +6,8 @@
     <atom:link href="https://www.miketruso.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Sat, 4 Nov 2017 22:56:51 -0500</pubDate>
-    <lastBuildDate>Sat, 4 Nov 2017 22:56:51 -0500</lastBuildDate>
+    <pubDate>Sat, 4 Nov 2017 23:07:31 -0500</pubDate>
+    <lastBuildDate>Sat, 4 Nov 2017 23:07:31 -0500</lastBuildDate>
 
     
     <item>
@@ -24,7 +24,7 @@ This traditional Catholic prayer is typically recited 15 times daily starting on
 This app will help you track how many times you&amp;#8217;ve recited this prayer each day.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;a class=&quot;image&quot; href=&quot;https://play.google.com/store/apps/details?id=com.miketruso.standrewnovena&amp;amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1&quot;&gt;&lt;img src=&quot; https:/play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png&quot; alt=&quot;Get it on Google Play&quot; width=&quot;200&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;a class=&quot;image&quot; href=&quot;https://play.google.com/store/apps/details?id=com.miketruso.standrewnovena&amp;amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1&quot;&gt;&lt;img src=&quot;/images/google-play-badge.png&quot; alt=&quot;Get it on Google Play&quot; width=&quot;200&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;View the source on &lt;a href=&quot;https://github.com/mftruso/st-andrew-novena&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
