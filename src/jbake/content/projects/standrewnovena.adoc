@@ -1,0 +1,24 @@
+= St. Andrew Novena
+Mike Truso
+2017-11-04
+:jbake-type: post
+:jbake-tags: android,novena
+:jbake-status: published
+
+I launched a simple Android app for praying the St. Andrew novena prayer.
+This traditional Catholic prayer is typically recited 15 times daily starting on November 30th, the Feast of St. Andrew, and finishing at Christmas.
+This app will help you track how many times you've recited this prayer each day.
+
+image:/images/google-play-badge.png[
+"Get it on Google Play",
+link="https://play.google.com/store/apps/details?id=com.miketruso.standrewnovena&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
+width=200]
+
+View the source on https://github.com/mftruso/st-andrew-novena[Github]
+
+== Changelog
+
+=== 1.0
+- Tap "Amen" to count your prayers
+- Counter resets daily
+- Ability to enable prayer reminders 15 times from 7 a.m. to 7 p.m.

@@ -14,6 +14,13 @@
           <ul class="nav navbar-nav">
             <li><a href="<%if (content.rootpath) {%>${content.rootpath}<% } else { %><% }%>index.html">Home</a></li>
             <li><a href="<%if (content.rootpath) {%>${content.rootpath}<% } else { %><% }%>about.html">About</a></li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="<%if (content.rootpath) {%>${content.rootpath}<% } else { %><% }%>projects/standrewnovena.html">St. Andrew Novena</a></li>
+                  </ul>
+              <ul>
+            </ul>
           </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="https://www.linkedin.com/in/michaeltruso/" title="LinkedIn"><i class="icon-linkedin"></i></a></li>
