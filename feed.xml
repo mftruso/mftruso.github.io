@@ -6,8 +6,8 @@
     <atom:link href="https://www.miketruso.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Sat, 4 Nov 2017 23:17:52 -0500</pubDate>
-    <lastBuildDate>Sat, 4 Nov 2017 23:17:52 -0500</lastBuildDate>
+    <pubDate>Sun, 5 Nov 2017 21:28:44 -0600</pubDate>
+    <lastBuildDate>Sun, 5 Nov 2017 21:28:44 -0600</lastBuildDate>
 
     
     <item>
@@ -24,16 +24,15 @@ This traditional Catholic prayer is typically recited 15 times daily starting on
 This app will help you track how many times you&amp;#8217;ve recited this prayer each day.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;a class=&quot;image&quot; href=&quot;https://play.google.com/store/apps/details?id=com.miketruso.standrewnovena&amp;amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1&quot;&gt;&lt;img src=&quot;/images/google-play-badge.png&quot; alt=&quot;Get it on Google Play&quot; width=&quot;200&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;View the source on &lt;a href=&quot;https://github.com/mftruso/st-andrew-novena&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;a class=&quot;image&quot; href=&quot;https://play.google.com/store/apps/details?id=com.miketruso.standrewnovena&amp;amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1&quot;&gt;&lt;img src=&quot;/images/google-play-badge.png&quot; alt=&quot;Get it on Google Play&quot; width=&quot;200&quot;&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;image&quot;&gt;&lt;a class=&quot;image&quot; href=&quot;http://a.co/8hg4x7z&quot;&gt;&lt;img src=&quot;/images/amazon-appsstore-us-black-v2.png&quot; alt=&quot;Get it on the Amazon App Store&quot; width=&quot;200&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;sect1&quot;&gt;
 &lt;h2 id=&quot;_changelog&quot;&gt;Changelog&lt;/h2&gt;
 &lt;div class=&quot;sectionbody&quot;&gt;
+&lt;hr&gt;
 &lt;div class=&quot;sect2&quot;&gt;
 &lt;h3 id=&quot;_1_0&quot;&gt;1.0&lt;/h3&gt;
 &lt;div class=&quot;ulist&quot;&gt;
@@ -48,6 +47,9 @@ This app will help you track how many times you&amp;#8217;ve recited this prayer
 &lt;p&gt;Ability to enable prayer reminders 15 times from 7 a.m. to 7 p.m.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;View the source on &lt;a href=&quot;https://github.com/mftruso/st-andrew-novena&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
