@@ -13,12 +13,17 @@ image:/images/google-play-badge.png[
 "Get it on Google Play",
 link="https://play.google.com/store/apps/details?id=com.miketruso.standrewnovena&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
 width=200]
-
-View the source on https://github.com/mftruso/st-andrew-novena[Github]
+image:/images/amazon-appsstore-us-black-v2.png[
+"Get it on the Amazon App Store",
+link="http://a.co/8hg4x7z",
+width=200]
 
 == Changelog
+---
 
 === 1.0
 - Tap "Amen" to count your prayers
 - Counter resets daily
 - Ability to enable prayer reminders 15 times from 7 a.m. to 7 p.m.
+
+View the source on https://github.com/mftruso/st-andrew-novena[Github]
