@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/miketruso
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://miketruso.com
+  * I am miketruso (https://keybase.io/miketruso) on keybase.
+  * I have a public key ASAbmhBqAmvJl2egWTVvpjNxr_GjAF73eSnLg1jmaQF4pgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01201b9a106a026bc99767a059356fa63371aff1a3005ef77929cb8358e6690178a60a",
+      "host": "keybase.io",
+      "kid": "01201b9a106a026bc99767a059356fa63371aff1a3005ef77929cb8358e6690178a60a",
+      "uid": "e1e6eaaa24a11e345105e0f453ca9719",
+      "username": "miketruso"
+    },
+    "merkle_root": {
+      "ctime": 1589295390,
+      "hash": "e748dc24fc76d6af769084c8fcd5440925a9b0cc7a1fc9cc444f6a429b50d8f6e18635a57ad53c004f517b0b5075b64afb7d0671b3fa259ec79cdb48cec4604c",
+      "hash_meta": "fd9099b509fdcf82c49f3304b7edddc0f41e8ea5b23aab4bfdb24b560629baa0",
+      "seqno": 16266196
+    },
+    "service": {
+      "entropy": "R/uHfHF+kTzU7ggUUXk+4eAo",
+      "hostname": "miketruso.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.4.2"
+  },
+  "ctime": 1589295397,
+  "expire_in": 504576000,
+  "prev": "362d48afaf6dd0c0a788c255e4a66ad27a7bfaf1d9faaa6cb10ce023185d66fd",
+  "seqno": 30,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgG5oQagJryZdnoFk1b6Yzca/xowBe93kpy4NY5mkBeKYKp3BheWxvYWTESpcCHsQgNi1Ir69t0MCniMJV5KZq0np7+vHZ+qpssQzgIxhdZv3EIJg4nliu1VEb3UspSJdnNUJAIn+VqQ+oFDUeWDGgPs/UAgHCo3NpZ8RAZki+mVCoadj8eCPSlZaKboO387KQSoAbCVwkXIFeokgSHScbit3I2QV746yMHlfPpJkBiwzGiGOQQJCJasi5DahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIGyynH1tYyNOfFVUouBbYREd6A7SCqc+MDAsIYEoFPqto3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/miketruso
+
+==================================================================
