@@ -33,11 +33,11 @@ jbake {
     clearCache = true
 }
 
-task copyCname(type: Copy) {
-    from 'CNAME'
+task copyStaticFiles(type: Copy) {
+    from 'static'
     into 'output'
 }
 
 task publish(type: GradleBuild) {
-    tasks = ['jbake','copyCname','gitPublishPush']
+    tasks = ['jbake','copyStaticFiles','gitPublishPush']
 }
