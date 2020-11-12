@@ -2,11 +2,9 @@ name: ci
 
 on:
   push:
-    branches-ignore:
-      - master
-  pull_request:
     branches:
       - master
+
 
 jobs:
   ci:
@@ -47,3 +45,11 @@ jobs:
 
       - name: Run tests 🧪
         run: yarn test
+
+      - run: npm run generate
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v2.5.0
+        env:
+          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          PUBLISH_DIR: ./dist
