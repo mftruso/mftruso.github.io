@@ -65,10 +65,10 @@ export default {
           success: colors.green.accent3
         },
         light: {
-          primary: "#601A0D",
-          accent: "#DBA63A",
-          secondary: "#FAF7D4",
-          info: colors.teal.lighten1,
+          primary: '#601A0D',
+          accent: '#DBA63A',
+          secondary: '#FAF7D4',
+          info: colors.teal.lighten1
         }
       }
     }
