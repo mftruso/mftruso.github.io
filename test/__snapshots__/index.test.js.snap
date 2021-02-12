@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`index Matches Snapshot 1`] = `
+"<v-row-stub tag=\\"div\\" align=\\"center\\" justify=\\"center\\">
+  <v-col-stub cols=\\"12\\" tag=\\"div\\">
+    <div>
+      <h2 class=\\"headline\\">
+        About
+      </h2>
+      <div>
+        <p>Howdy! I'm a Software Developer based in St. Paul, MN.</p>
+        <v-spacer-stub></v-spacer-stub>
+        <h2 class=\\"headline\\">
+          Projects
+        </h2>
+        <p>Here are a few things I've been working on in my spare time.</p>
+        <v-row-stub tag=\\"div\\"></v-row-stub>
+      </div>
+    </div>
+  </v-col-stub>
+</v-row-stub>"
+`;

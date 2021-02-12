@@ -1,12 +1,11 @@
 import { createLocalVue, shallowMount } from '@vue/test-utils'
 import index from '@/pages/index'
-import vuetify from 'vuetify'
 
 describe('index', () => {
+  const localVue = createLocalVue()
   let wrapper
+
   beforeEach(() => {
-    const localVue = createLocalVue()
-    localVue.use(vuetify)
     wrapper = shallowMount(index, {
       localVue
     })
@@ -14,5 +13,9 @@ describe('index', () => {
 
   test('is a Vue instance', () => {
     expect(wrapper.vm).toBeTruthy()
+  })
+
+  test('Matches Snapshot', () => {
+    expect(wrapper.html()).toMatchSnapshot()
   })
 })

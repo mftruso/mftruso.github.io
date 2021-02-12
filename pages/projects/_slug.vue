@@ -11,7 +11,9 @@
       <nuxt-content :document="page" />
       <div>
         <v-btn v-if="page.link" color="primary" :href="page.link" target="_blank" text>
-          View Project <v-icon small>mdi-open-in-new</v-icon>
+          View Project <v-icon small>
+            mdi-open-in-new
+          </v-icon>
         </v-btn>
         <v-img v-if="page.img" :src="page.img" :alt="page.alt" />
       </div>

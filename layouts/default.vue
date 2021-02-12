@@ -7,7 +7,7 @@
     >
       <v-toolbar-title v-text="title" />
       <v-spacer />
-       <v-btn
+      <v-btn
         icon
         target="_blank"
         href="https://github.com/mftruso"
