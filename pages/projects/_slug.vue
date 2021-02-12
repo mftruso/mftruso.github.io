@@ -25,7 +25,6 @@
 export default {
   async asyncData ({ $content, params, error }) {
     const slug = params.slug ? `projects/${params.slug}` : 'hello'
-    console.log(slug)
     const page = await $content(slug)
       .fetch()
       .catch((err) => {

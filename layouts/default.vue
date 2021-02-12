@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar
       :clipped-left="clipped"
-      fixed
+      :fixed="fixed"
       app
     >
       <v-toolbar-title v-text="title" />
@@ -49,7 +49,8 @@ export default {
   data () {
     return {
       clipped: false,
-      title: 'Mike Truso'
+      title: 'Mike Truso',
+      fixed: true
     }
   }
 }
