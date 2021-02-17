@@ -1,13 +1,15 @@
 <template>
   <v-row justify="center" align="center">
     <v-col cols="12">
-      <div>
-        <h2 class="headline">
-          About
-        </h2>
-        <div>
+      <article>
+        <section>
+          <h2 class="headline">
+            About
+          </h2>
           <p>Howdy! I'm a Software Developer based in St. Paul, MN.</p>
-          <v-spacer />
+        </section>
+        <v-spacer />
+        <section>
           <h2 class="headline">
             Projects
           </h2>
@@ -17,8 +19,8 @@
               <ArticleCard :article="article" />
             </v-col>
           </v-row>
-        </div>
-      </div>
+        </section>
+      </article>
     </v-col>
   </v-row>
 </template>

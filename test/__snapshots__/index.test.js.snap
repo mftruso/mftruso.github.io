@@ -3,20 +3,22 @@
 exports[`index Matches Snapshot 1`] = `
 "<v-row-stub tag=\\"div\\" align=\\"center\\" justify=\\"center\\">
   <v-col-stub cols=\\"12\\" tag=\\"div\\">
-    <div>
-      <h2 class=\\"headline\\">
-        About
-      </h2>
-      <div>
+    <article>
+      <section>
+        <h2 class=\\"headline\\">
+          About
+        </h2>
         <p>Howdy! I'm a Software Developer based in St. Paul, MN.</p>
-        <v-spacer-stub></v-spacer-stub>
+      </section>
+      <v-spacer-stub></v-spacer-stub>
+      <section>
         <h2 class=\\"headline\\">
           Projects
         </h2>
         <p>Here are a few things I've been working on in my spare time.</p>
         <v-row-stub tag=\\"div\\"></v-row-stub>
-      </div>
-    </div>
+      </section>
+    </article>
   </v-col-stub>
 </v-row-stub>"
 `;

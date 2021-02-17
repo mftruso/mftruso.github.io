@@ -6,17 +6,19 @@
           mdi-arrow-left
         </v-icon> Home
       </nuxt-link>
-      <h1>{{ page.title }}</h1>
-      <p>{{ page.description }}</p>
-      <nuxt-content :document="page" />
-      <div>
-        <v-btn v-if="page.link" color="primary" :href="page.link" target="_blank" text>
-          View Project <v-icon small>
-            mdi-open-in-new
-          </v-icon>
-        </v-btn>
-        <v-img v-if="page.img" :src="page.img" :alt="page.alt" />
-      </div>
+      <article>
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.description }}</p>
+        <nuxt-content :document="page" />
+        <div>
+          <v-btn v-if="page.link" color="primary" :href="page.link" target="_blank" text>
+            View Project <v-icon small>
+              mdi-open-in-new
+            </v-icon>
+          </v-btn>
+          <v-img v-if="page.img" :src="page.img" :alt="page.alt" />
+        </div>
+      </article>
     </v-col>
   </v-row>
 </template>
