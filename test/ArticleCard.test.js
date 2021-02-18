@@ -18,7 +18,7 @@ describe('ArticleCard', () => {
   test('Matches Snapshot', () => {
     expect(wrapper.html()).toMatchSnapshot()
     const buttons = wrapper.findAll('v-btn-stub')
-    const link = wrapper.find(RouterLinkStub)
+    const link = wrapper.findComponent(RouterLinkStub)
     expect(buttons).toHaveLength(2)
     expect(link).toBeTruthy()
   })
