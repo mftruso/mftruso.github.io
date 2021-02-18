@@ -3,17 +3,31 @@
     <v-col cols="12">
       <article>
         <section>
-          <h2 class="headline">
-            About
-          </h2>
-          <p>Howdy! I'm a Software Developer based in St. Paul, MN.</p>
+          <v-card class="text-center">
+            <v-card-title />
+            <v-avatar size="162">
+              <v-img
+                src="/images/miketruso.jpg"
+                lazy-src="/images/miketruso.jpg"
+                alt="Mike Truso"
+              />
+            </v-avatar>
+            <v-card-text>
+              <p class="text-h5">
+                Howdy! I'm a Software Engineer based in St. Paul, MN.
+                I love crafting software using Java, Groovy and JavaScript tools.
+              </p>
+            </v-card-text>
+          </v-card>
         </section>
         <v-spacer />
-        <section>
+        <section class="my-5">
           <h2 class="headline">
             Projects
           </h2>
-          <p>Here are a few things I've been working on in my spare time.</p>
+          <p class="text-h6">
+            Here are a few things I've been working on in my spare time.
+          </p>
           <v-row>
             <v-col v-for="article of articles" :key="article.slug" cols="12" md="4">
               <ArticleCard :article="article" />

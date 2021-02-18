@@ -72,6 +72,12 @@ export default {
           info: colors.teal.lighten1
         }
       }
+    },
+    treeShake: true,
+    defaultAssets: {
+      font: {
+        family: 'Nunito'
+      }
     }
   },
 
