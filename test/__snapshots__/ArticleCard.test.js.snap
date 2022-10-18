@@ -4,14 +4,14 @@ exports[`ArticleCard Matches Snapshot 1`] = `
 "<article>
   <v-card-stub loaderheight=\\"4\\" tag=\\"div\\" maxwidth=\\"400\\" class=\\"mx-auto\\"><a>
       <v-img-stub height=\\"200px\\" options=\\"[object Object]\\" position=\\"center center\\" src=\\"\\" transition=\\"fade-transition\\" class=\\"align-end\\"></v-img-stub>
-      <v-card-title-stub class=\\"text--primary\\">
+      <v-card-title-stub tag=\\"div\\" class=\\"text--primary\\">
         Cool Project
       </v-card-title-stub>
     </a>
-    <v-card-text-stub>
+    <v-card-text-stub tag=\\"div\\">
       <p>I learned a lot</p>
     </v-card-text-stub>
-    <v-card-actions-stub>
+    <v-card-actions-stub tag=\\"div\\">
       <v-btn-stub color=\\"primary\\" tag=\\"button\\" activeclass=\\"\\" to=\\"projects/cool\\" text=\\"true\\" type=\\"button\\">
         Details
       </v-btn-stub>
