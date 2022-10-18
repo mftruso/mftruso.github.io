@@ -6,11 +6,11 @@ exports[`index Matches Snapshot 1`] = `
     <article>
       <section>
         <v-card-stub loaderheight=\\"4\\" tag=\\"div\\" class=\\"text-center\\">
-          <v-card-title-stub></v-card-title-stub>
+          <v-card-title-stub tag=\\"div\\"></v-card-title-stub>
           <v-avatar-stub size=\\"162\\">
             <v-img-stub alt=\\"Mike Truso\\" lazysrc=\\"/images/miketruso.jpg\\" options=\\"[object Object]\\" position=\\"center center\\" src=\\"/images/miketruso.jpg\\" transition=\\"fade-transition\\"></v-img-stub>
           </v-avatar-stub>
-          <v-card-text-stub>
+          <v-card-text-stub tag=\\"div\\">
             <p class=\\"text-h5\\">
               Howdy! I'm a Software Engineer based in St. Paul, MN.
               I love crafting software using Java, Groovy and JavaScript tools.
@@ -18,7 +18,7 @@ exports[`index Matches Snapshot 1`] = `
           </v-card-text-stub>
         </v-card-stub>
       </section>
-      <v-spacer-stub></v-spacer-stub>
+      <v-spacer-stub tag=\\"div\\"></v-spacer-stub>
       <section class=\\"my-5\\">
         <h2 class=\\"headline\\">
           Projects
