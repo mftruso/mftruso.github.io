@@ -1,6 +1,5 @@
-import colors from 'vuetify/es5/util/colors'
 
-export default {
+export default defineNuxtConfig({
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
   ssr: false,
 
@@ -8,7 +7,8 @@ export default {
   target: 'static',
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
-  head: {
+  // TODO move to app.vue
+  meta: {
     titleTemplate: '%s - Mike Truso',
     title: 'Mike Truso',
     meta: [
@@ -34,17 +34,17 @@ export default {
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
-    // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module',
-    // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify',
-    '@nuxtjs/google-analytics'
+
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content'
+    // https://go.nuxtjs.dev/eslint
+    // '@nuxtjs/eslint-module', not ready yet
+    // https://go.nuxtjs.dev/vuetify
+    // '@nuxtjs/vuetify', not ready yet
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
@@ -83,9 +83,6 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-  },
-
-  googleAnalytics: {
-    id: 'UA-39860044-1'
   }
-}
+
+})

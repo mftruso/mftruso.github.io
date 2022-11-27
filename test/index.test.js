@@ -1,14 +1,11 @@
-import { createLocalVue, shallowMount } from '@vue/test-utils'
+import { describe, test, beforeEach, expect, shallowMount } from 'vitest'
 import index from '@/pages/index'
 
 describe('index', () => {
-  const localVue = createLocalVue()
   let wrapper
 
   beforeEach(() => {
-    wrapper = shallowMount(index, {
-      localVue
-    })
+    wrapper = shallowMount(index)
   })
 
   test('is a Vue instance', () => {

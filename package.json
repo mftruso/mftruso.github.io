@@ -3,34 +3,28 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxt dev",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "preview": "nuxt preview",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "yarn lint:js",
+    "lint:fix": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
     "test": "jest"
   },
   "dependencies": {
-    "@nuxt/content": "^1.15.1",
-    "core-js": "^3.25.5",
-    "nuxt": "^2.15.8"
+    "@nuxt/content": "^2.2.2",
+    "nuxt": "^3.0.0"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "^6.0.1",
-    "@nuxtjs/eslint-module": "^3.0.2",
-    "@nuxtjs/google-analytics": "^2.4.0",
-    "@nuxtjs/vuetify": "^1.12.3",
-    "@vue/test-utils": "^1.2.2",
-    "babel-core": "7.0.0-bridge.0",
-    "babel-eslint": "^10.1.0",
-    "babel-jest": "^27.5.1",
-    "eslint": "^7.32.0",
-    "eslint-plugin-nuxt": "^2.0.0",
-    "jest": "^26.5.0",
-    "vue-jest": "^3.0.7"
+    "@nuxt/test-utils-edge": "^3.0.1-rc.0-27817270.4f2bfbe",
+    "@nuxtjs/eslint-config": "^12.0.0",
+    "eslint": "^8.28.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "vitest": "^0.25.3",
+    "vue-gtag-next": "^1.14.0"
   },
   "engines": {
-    "node": ">=16.18.0 <17"
+    "node": ">=18.12.1 <19"
   }
 }

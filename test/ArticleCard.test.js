@@ -1,8 +1,7 @@
-import { createLocalVue, shallowMount, RouterLinkStub } from '@vue/test-utils'
+import { describe, test, beforeEach, expect, shallowMount } from 'vitest'
 import ArticleCard from '~/components/ArticleCard'
 
 describe('ArticleCard', () => {
-  const localVue = createLocalVue()
   let wrapper
 
   beforeEach(() => {
