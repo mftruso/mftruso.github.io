@@ -13,16 +13,17 @@
     "test": "jest"
   },
   "dependencies": {
+    "@mdi/font": "^7.0.96",
     "@nuxt/content": "^2.2.2",
-    "nuxt": "^3.0.0"
+    "nuxt": "^3.0.0",
+    "sass": "^1.56.1",
+    "vuetify": "3.0.2"
   },
   "devDependencies": {
-    "@nuxt/test-utils-edge": "^3.0.1-rc.0-27817270.4f2bfbe",
     "@nuxtjs/eslint-config": "^12.0.0",
     "eslint": "^8.28.0",
     "eslint-plugin-nuxt": "^4.0.0",
-    "vitest": "^0.25.3",
-    "vue-gtag-next": "^1.14.0"
+    "vitest": "^0.25.3"
   },
   "engines": {
     "node": ">=18.12.1 <19"
