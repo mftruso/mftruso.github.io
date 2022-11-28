@@ -12,7 +12,11 @@
       <article>
         <h1>{{ page.title }}</h1>
         <p>{{ page.description }}</p>
-        <nuxt-content :document="page" />
+        <ContentDoc >
+          <template #not-found>
+            <h1>Document not found</h1>
+          </template>
+        </ContentDoc>
         <div>
           <v-btn
             v-if="page.link"
@@ -36,20 +40,10 @@
   </v-row>
 </template>
 
-<script>
-export default {
-  async asyncData ({ $content, params, error }) {
-    const slug = params.slug ? `projects/${params.slug}` : 'hello'
-    const page = await $content(slug)
-      .fetch()
-      .catch((err) => {
-        error({ statusCode: 404, message: 'Page not found' })
-        console.err(err)
-      })
+<script setup>
+const route = useRoute()
 
-    return {
-      page
-    }
-  }
-}
+const { data: page } = await useAsyncData('get-project', () => {
+  return queryContent(route.path).findOne()
+})
 </script>

@@ -41,27 +41,7 @@
 </template>
 
 <script setup>
-// const { data: equalQuery } = await useAsyncData('equal', () => {
-//   return queryContent('/').where({ director: 'Hayao Miyazaki' }).find()
-// })
-
 const { data } =  await useAsyncData('projects', () => {
-  return queryContent('/projects').only(['title', 'description', 'img', 'alt', 'slug', 'author', 'link']).sortBy({ createdAt: -1 }).find()
+  return queryContent('/projects').sort({ createdAt: -1 }).find()
 })
-
-// export default {
-//   async asyncData ({ $content, params }) {
-//
-//     console.log(articles)
-//
-//     // const articles = await $content('projects', params.slug)
-//     //   .only(['title', 'description', 'img', 'alt', 'slug', 'author', 'link'])
-//     //   .sortBy('createdAt', 'desc')
-//     //   .fetch()
-//
-//     return {
-//       articles
-//     }
-//   }
-// }
 </script>

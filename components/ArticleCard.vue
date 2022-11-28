@@ -4,7 +4,7 @@
       class="mx-auto"
       max-width="400"
     >
-      <NuxtLink :to="`projects/${article.slug}`">
+      <NuxtLink :to="`${article._path}`">
         <v-img
           :src="article.img"
           :alt="article.img"
