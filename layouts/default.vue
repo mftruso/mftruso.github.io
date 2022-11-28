@@ -31,7 +31,7 @@
     </v-app-bar>
     <v-main>
       <v-container>
-        <nuxt />
+        <NuxtPage />
       </v-container>
     </v-main>
     <v-footer
@@ -39,7 +39,13 @@
       app
     >
       <span>&copy; {{ new Date().getFullYear() }} Mike Truso</span>
-      <span class="pl-2">This site is built with <a href="https://nuxtjs.org/" target="_blank">NuxtJS</a> and open sourced on <a href="https://github.com/mftruso/mftruso.github.io" target="_blank">GitHub</a>.</span>
+      <span class="pl-2">This site is built with <a
+        href="https://nuxtjs.org/"
+        target="_blank"
+      >NuxtJS</a> and open sourced on <a
+        href="https://github.com/mftruso/mftruso.github.io"
+        target="_blank"
+      >GitHub</a>.</span>
     </v-footer>
   </v-app>
 </template>

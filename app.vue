@@ -1,1 +1,5 @@
-<template><h1>Hi!</h1></template>
+<template>
+  <div>
+    <NuxtLayout />
+  </div>
+</template>

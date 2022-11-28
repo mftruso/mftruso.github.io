@@ -7,9 +7,9 @@
     "build": "nuxt build",
     "preview": "nuxt preview",
     "generate": "nuxt generate",
-    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint:js": "eslint --ext .vue --ignore-path .gitignore .",
     "lint": "yarn lint:js",
-    "lint:fix": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
+    "lint:fix": "eslint --ext .vue --ignore-path .gitignore . --fix",
     "test": "jest"
   },
   "dependencies": {
@@ -23,6 +23,8 @@
     "@nuxtjs/eslint-config": "^12.0.0",
     "eslint": "^8.28.0",
     "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-vue": "^9.8.0",
+    "eslint-plugin-vuetify": "^2.0.0-beta.2",
     "vitest": "^0.25.3"
   },
   "engines": {

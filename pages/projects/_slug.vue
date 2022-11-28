@@ -2,7 +2,10 @@
   <v-row>
     <v-col>
       <nuxt-link to="/">
-        <v-icon x-small color="primary">
+        <v-icon
+          size="x-small"
+          color="primary"
+        >
           mdi-arrow-left
         </v-icon> Home
       </nuxt-link>
@@ -11,12 +14,22 @@
         <p>{{ page.description }}</p>
         <nuxt-content :document="page" />
         <div>
-          <v-btn v-if="page.link" color="primary" :href="page.link" target="_blank" text>
-            View Project <v-icon small>
+          <v-btn
+            v-if="page.link"
+            color="primary"
+            :href="page.link"
+            target="_blank"
+            variant="text"
+          >
+            View Project <v-icon size="small">
               mdi-open-in-new
             </v-icon>
           </v-btn>
-          <v-img v-if="page.img" :src="page.img" :alt="page.alt" />
+          <v-img
+            v-if="page.img"
+            :src="page.img"
+            :alt="page.alt"
+          />
         </div>
       </article>
     </v-col>
