@@ -4,22 +4,7 @@ export default defineNuxtConfig({
   ssr: false,
 
   // Target (https://go.nuxtjs.dev/config-target)
-  target: 'static',
-
-  // Global page headers (https://go.nuxtjs.dev/config-head)
-  // TODO move to app.vue
-  meta: {
-    titleTemplate: '%s - Mike Truso',
-    title: 'Mike Truso',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
-  },
+  target: 'static',  
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
@@ -47,6 +32,9 @@ export default defineNuxtConfig({
     // '@nuxtjs/eslint-module', not ready yet
     // https://go.nuxtjs.dev/vuetify
     // '@nuxtjs/vuetify', not ready yet
+
+    // import vuetify from 'vite-plugin-vuetify'
+    // https://next.vuetifyjs.com/en/features/treeshaking/
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)

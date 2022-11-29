@@ -8,8 +8,9 @@
         <v-img
           :src="article.img"
           :alt="article.img"
-          height="200px"
           class="align-end"
+          cover
+          style="height: 200px"
         />
         <v-card-title class="text--primary">
           {{ article.title }}
