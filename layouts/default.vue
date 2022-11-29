@@ -1,11 +1,7 @@
 <template>
   <v-app>
-    <v-app-bar
-      :clipped-left="clipped"
-      :fixed="fixed"
-      app
-    >
-      <v-toolbar-title v-text="title" />
+    <v-app-bar>
+      <v-app-bar-title>{{ title}}</v-app-bar-title>
       <v-spacer />
       <v-btn
         icon
@@ -35,7 +31,6 @@
       </v-container>
     </v-main>
     <v-footer
-      :absolute="!fixed"
       app
     >
       <span>&copy; {{ new Date().getFullYear() }} Mike Truso</span>
@@ -55,9 +50,7 @@
 export default {
   data () {
     return {
-      clipped: false,
       title: 'Mike Truso',
-      fixed: true
     }
   }
 }
