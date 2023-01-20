@@ -22,7 +22,7 @@
       <v-card-actions>
         <v-btn
           color="primary"
-          :to="`projects/${article.slug}`"
+          :to="`${article._path}`"
           variant="text"
         >
           Details

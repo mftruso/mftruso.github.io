@@ -1,10 +1,9 @@
 <template>
   <v-row>
     <v-col>
-      <nuxt-link to="/">
+      <nuxt-link to="/" class="back-link">
         <v-icon
           size="x-small"
-          color="primary"
         >
           mdi-arrow-left
         </v-icon> Home
@@ -47,3 +46,9 @@ const { data: page } = await useAsyncData('get-project', () => {
   return queryContent(route.path).findOne()
 })
 </script>
+
+<style lang="scss" scoped>
+.back-link {
+  text-decoration: none;
+}
+</style>
