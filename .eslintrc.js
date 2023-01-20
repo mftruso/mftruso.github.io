@@ -10,8 +10,14 @@ module.exports = {
     'plugin:vuetify/base'
   ],
   parser: "vue-eslint-parser",
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module'
+  },
   plugins: [
   ],
   // add your custom rules here
-  rules: {}
+  rules: {
+    "vue/multi-word-component-names": "off"
+  }
 }

@@ -48,6 +48,7 @@
 <script>
 // +JMJ
 export default {
+  name: 'DefaultLayout',
   data () {
     return {
       title: 'Mike Truso',
