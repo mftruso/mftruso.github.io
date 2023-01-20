@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-app-bar>
-      <v-app-bar-title>{{ title}}</v-app-bar-title>
+      <v-app-bar-title>{{ title }}</v-app-bar-title>
       <v-spacer />
       <v-btn
         icon

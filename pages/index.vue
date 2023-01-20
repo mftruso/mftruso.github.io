@@ -1,10 +1,13 @@
 <template>
-  <v-row justify="center" align="center">
+  <v-row
+    justify="center"
+    align="center"
+  >
     <v-col cols="12">
       <article>
         <section>
           <v-card class="text-center">
-            <v-card-title/>
+            <v-card-title />
             <v-avatar size="162">
               <v-img
                 src="/images/miketruso.jpg"
@@ -21,7 +24,7 @@
             </v-card-text>
           </v-card>
         </section>
-        <v-spacer/>
+        <v-spacer />
         <section class="my-5">
           <h2 class="text-h5">
             Projects
@@ -30,8 +33,13 @@
             Here are a few things I've been working on in my spare time.
           </p>
           <v-row>
-            <v-col v-for="article of data" :key="article.slug" cols="12" md="4">
-              <ArticleCard :article="article"/>
+            <v-col
+              v-for="article of data"
+              :key="article.slug"
+              cols="12"
+              md="4"
+            >
+              <ArticleCard :article="article" />
             </v-col>
           </v-row>
         </section>

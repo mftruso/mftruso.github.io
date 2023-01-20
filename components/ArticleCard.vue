@@ -45,6 +45,6 @@
 
 <script>
 export default {
-  props: { article: Object }
+  props: { article: { type: Object, default: () => ({})} }
 }
 </script>

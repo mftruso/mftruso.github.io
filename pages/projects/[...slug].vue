@@ -1,7 +1,10 @@
 <template>
   <v-row>
     <v-col>
-      <nuxt-link to="/" class="back-link">
+      <nuxt-link
+        to="/"
+        class="back-link"
+      >
         <v-icon
           size="x-small"
         >
@@ -11,7 +14,7 @@
       <article>
         <h1>{{ page.title }}</h1>
         <p>{{ page.description }}</p>
-        <ContentDoc >
+        <ContentDoc>
           <template #not-found>
             <h1>Document not found</h1>
           </template>
