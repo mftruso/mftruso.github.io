@@ -15,6 +15,7 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: [
+    'vitest'
   ],
   // add your custom rules here
   rules: {
