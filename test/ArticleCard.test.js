@@ -1,24 +1,23 @@
-import { createLocalVue, shallowMount, RouterLinkStub } from '@vue/test-utils'
-import ArticleCard from '~/components/ArticleCard'
+import { describe, test, beforeEach, expect } from 'vitest'
+import { shallowMount, RouterLinkStub } from "@vue/test-utils";
+import ArticleCard from '@/components/ArticleCard.vue'
 
 describe('ArticleCard', () => {
-  const localVue = createLocalVue()
   let wrapper
 
   beforeEach(() => {
     wrapper = shallowMount(ArticleCard, {
-      localVue,
       stubs: {
         NuxtLink: RouterLinkStub
       },
-      propsData: { article: { title: 'Cool Project', description: 'I learned a lot', slug: 'cool', link: 'https://github.com' } }
+      propsData: { article: { title: 'Cool Project', description: 'I learned a lot', _path: 'cool', link: 'https://github.com' } }
     })
   })
 
   test('Matches Snapshot', () => {
     expect(wrapper.html()).toMatchSnapshot()
-    const buttons = wrapper.findAll('v-btn-stub')
-    const link = wrapper.findComponent(RouterLinkStub)
+    const buttons = wrapper.findAll('v-btn')
+    const link = wrapper.findComponent('nuxtlink')
     expect(buttons).toHaveLength(2)
     expect(link).toBeTruthy()
   })

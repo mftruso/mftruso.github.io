@@ -1,26 +1,20 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`ArticleCard Matches Snapshot 1`] = `
+exports[`ArticleCard > Matches Snapshot 1`] = `
 "<article>
-  <v-card-stub loaderheight=\\"4\\" tag=\\"div\\" maxwidth=\\"400\\" class=\\"mx-auto\\"><a>
-      <v-img-stub height=\\"200px\\" options=\\"[object Object]\\" position=\\"center center\\" src=\\"\\" transition=\\"fade-transition\\" class=\\"align-end\\"></v-img-stub>
-      <v-card-title-stub tag=\\"div\\" class=\\"text--primary\\">
-        Cool Project
-      </v-card-title-stub>
-    </a>
-    <v-card-text-stub tag=\\"div\\">
+  <v-card class=\\"mx-auto\\" max-width=\\"400\\">
+    <nuxtlink to=\\"cool\\">
+      <v-img class=\\"align-end\\" cover=\\"\\" style=\\"height: 200px;\\"></v-img>
+      <v-card-title class=\\"text--primary\\">Cool Project</v-card-title>
+    </nuxtlink>
+    <v-card-text>
       <p>I learned a lot</p>
-    </v-card-text-stub>
-    <v-card-actions-stub tag=\\"div\\">
-      <v-btn-stub color=\\"primary\\" tag=\\"button\\" activeclass=\\"\\" to=\\"projects/cool\\" text=\\"true\\" type=\\"button\\">
-        Details
-      </v-btn-stub>
-      <v-btn-stub color=\\"primary\\" tag=\\"button\\" activeclass=\\"\\" href=\\"https://github.com\\" target=\\"_blank\\" text=\\"true\\" type=\\"button\\">
-        View Project <v-icon-stub small=\\"\\">
-          mdi-open-in-new
-        </v-icon-stub>
-      </v-btn-stub>
-    </v-card-actions-stub>
-  </v-card-stub>
+    </v-card-text>
+    <v-card-actions>
+      <v-btn color=\\"primary\\" to=\\"cool\\" variant=\\"text\\"> Details </v-btn>
+      <v-btn color=\\"primary\\" href=\\"https://github.com\\" target=\\"_blank\\" variant=\\"text\\"> View Project <v-icon size=\\"small\\"> mdi-open-in-new </v-icon>
+      </v-btn>
+    </v-card-actions>
+  </v-card>
 </article>"
 `;

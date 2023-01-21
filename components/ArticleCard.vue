@@ -1,8 +1,17 @@
 <template>
   <article>
-    <v-card class="mx-auto" max-width="400">
-      <NuxtLink :to="`projects/${article.slug}`">
-        <v-img :src="article.img" :alt="article.img" height="200px" class="align-end" />
+    <v-card
+      class="mx-auto"
+      max-width="400"
+    >
+      <NuxtLink :to="`${article._path}`">
+        <v-img
+          :src="article.img"
+          :alt="article.img"
+          class="align-end"
+          cover
+          style="height: 200px"
+        />
         <v-card-title class="text--primary">
           {{ article.title }}
         </v-card-title>
@@ -11,11 +20,21 @@
         <p>{{ article.description }}</p>
       </v-card-text>
       <v-card-actions>
-        <v-btn color="primary" :to="`projects/${article.slug}`" text>
+        <v-btn
+          color="primary"
+          :to="`${article._path}`"
+          variant="text"
+        >
           Details
         </v-btn>
-        <v-btn v-if="article.link" color="primary" :href="article.link" target="_blank" text>
-          View Project <v-icon small>
+        <v-btn
+          v-if="article.link"
+          color="primary"
+          :href="article.link"
+          target="_blank"
+          variant="text"
+        >
+          View Project <v-icon size="small">
             mdi-open-in-new
           </v-icon>
         </v-btn>
@@ -26,6 +45,6 @@
 
 <script>
 export default {
-  props: { article: Object }
+  props: { article: { type: Object, default: () => ({})} }
 }
 </script>

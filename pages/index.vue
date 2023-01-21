@@ -1,5 +1,8 @@
 <template>
-  <v-row justify="center" align="center">
+  <v-row
+    justify="center"
+    align="center"
+  >
     <v-col cols="12">
       <article>
         <section>
@@ -10,6 +13,7 @@
                 src="/images/miketruso.jpg"
                 lazy-src="/images/miketruso.jpg"
                 alt="Mike Truso"
+                cover
               />
             </v-avatar>
             <v-card-text>
@@ -22,14 +26,19 @@
         </section>
         <v-spacer />
         <section class="my-5">
-          <h2 class="headline">
+          <h2 class="text-h5">
             Projects
           </h2>
           <p class="text-h6">
             Here are a few things I've been working on in my spare time.
           </p>
           <v-row>
-            <v-col v-for="article of articles" :key="article.slug" cols="12" md="4">
+            <v-col
+              v-for="article of data"
+              :key="article.slug"
+              cols="12"
+              md="4"
+            >
               <ArticleCard :article="article" />
             </v-col>
           </v-row>
@@ -39,17 +48,8 @@
   </v-row>
 </template>
 
-<script>
-export default {
-  async asyncData ({ $content, params }) {
-    const articles = await $content('projects', params.slug)
-      .only(['title', 'description', 'img', 'alt', 'slug', 'author', 'link'])
-      .sortBy('createdAt', 'desc')
-      .fetch()
-
-    return {
-      articles
-    }
-  }
-}
+<script setup>
+const { data } =  await useAsyncData('projects', () => {
+  return queryContent('/projects').sort({ createdAt: -1 }).find()
+})
 </script>
