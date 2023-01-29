@@ -29,7 +29,7 @@ jobs:
       - name: Run tests 🧪
         run: yarn test
 
-      - run: yarn generate
+      - run: yarn build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.9.2

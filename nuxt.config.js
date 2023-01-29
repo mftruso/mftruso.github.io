@@ -2,9 +2,9 @@
 export default defineNuxtConfig({
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
   ssr: false,
-
-  // Target (https://go.nuxtjs.dev/config-target)
-  target: 'static',  
+  nitro: {
+    preset: 'service-worker'
+  },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
@@ -32,7 +32,6 @@ export default defineNuxtConfig({
     // import vuetify from 'vite-plugin-vuetify'
     // https://next.vuetifyjs.com/en/features/treeshaking/
     '@nuxtjs/google-fonts',
-    
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
@@ -46,7 +45,7 @@ export default defineNuxtConfig({
   build: {
   },
 
-  
+
   googleFonts: {
     families: {
       Nunito: true,
@@ -55,6 +54,6 @@ export default defineNuxtConfig({
     // download: true,
     // prefetch: true
   }
-  
+
 
 })
