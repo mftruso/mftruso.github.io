@@ -12,7 +12,7 @@ useHead({
         : 'Mike Truso'
   },
   meta: [
-    { name: 'description', content: "Software Engineer, Dad, Catholic"}
+    { name: 'description', content: "Personal website for Mike Truso: Software Engineer, Dad, Catholic"}
   ],
   link: [
     { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
