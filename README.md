@@ -2,10 +2,10 @@
 
 ## Built With
 
-- [Nuxt](https://nuxtjs.org)
+- [Nuxt 3](https://nuxtjs.com)
 - [Vuetify](https://vuetifyjs.com/en/)
 
-## Build Setup
+## Development
 
 ```bash
 # install dependencies
@@ -13,11 +13,13 @@ $ yarn install
 
 # serve with hot reload at localhost:3000
 $ yarn dev
+```
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+## Build & Deploy
+Nuxt Content currently [requires](https://content.nuxtjs.org/guide/deploy/static-hosting#client-side-only-rendering) a service worker for a client only site. 
 
-# generate static project
-$ yarn generate
+``` 
+yarn build
+# optional
+yarn preview
 ```
