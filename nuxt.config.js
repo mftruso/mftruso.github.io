@@ -1,7 +1,7 @@
-
 export default defineNuxtConfig({
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
   ssr: false,
+
   nitro: {
     preset: 'service-worker'
   },
@@ -45,7 +45,6 @@ export default defineNuxtConfig({
   build: {
   },
 
-
   googleFonts: {
     families: {
       Nunito: true,
@@ -53,7 +52,7 @@ export default defineNuxtConfig({
     },
     // download: true,
     // prefetch: true
-  }
+  },
 
-
+  compatibilityDate: '2025-03-20'
 })
