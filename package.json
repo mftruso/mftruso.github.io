@@ -29,7 +29,7 @@
     "eslint-plugin-vitest": "^0.5.4",
     "eslint-plugin-vue": "^10.0.0",
     "eslint-plugin-vuetify": "^2.5.2",
-    "jsdom": "^21.0.0",
+    "jsdom": "^26.0.0",
     "vite-plugin-vuetify": "^2.1.0",
     "vitest": "^3.0.9",
     "vue-gtag-next": "^1.14.0"
