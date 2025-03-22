@@ -1,7 +1,7 @@
-
 export default defineNuxtConfig({
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
   ssr: false,
+
   nitro: {
     preset: 'service-worker'
   },
@@ -32,6 +32,7 @@ export default defineNuxtConfig({
     // import vuetify from 'vite-plugin-vuetify'
     // https://next.vuetifyjs.com/en/features/treeshaking/
     '@nuxtjs/google-fonts',
+    '@nuxt/eslint'
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
@@ -45,7 +46,6 @@ export default defineNuxtConfig({
   build: {
   },
 
-
   googleFonts: {
     families: {
       Nunito: true,
@@ -53,7 +53,11 @@ export default defineNuxtConfig({
     },
     // download: true,
     // prefetch: true
-  }
+  },
 
+  eslint: {
+    // options
+  },
 
+  compatibilityDate: '2025-03-20'
 })

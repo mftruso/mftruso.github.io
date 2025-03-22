@@ -16,6 +16,11 @@ jobs:
       - name: Checkout 🛎
         uses: actions/checkout@v4
 
+      - name: Enable Corepack
+        run: |
+          corepack enable
+          yarn --version
+
       - name: Setup node env 🏗
         uses: actions/setup-node@v4
         with:
@@ -24,6 +29,9 @@ jobs:
 
       - name: Install dependencies 👨🏻‍💻
         run: yarn install --frozen-lockfile
+
+      - name: Build
+        run: yarn generate
 
       - name: Run linter 👀
         run: yarn lint
